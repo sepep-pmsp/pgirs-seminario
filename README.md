@@ -1,13 +1,5 @@
 # PgirsSeminario
 
-Organizado pela Prefeitura de São Paulo, em parceria com Programa das Nações Unidas para os Assentamentos Humanos (ONU-Habitat), o seminário vai envolver questões relacionadas aos Planos Municipais de Saneamento Básico (PMSB) e de Gestão Integrada de Resíduos Sólidos (PGIRS), em desenvolvimento.
- 
-A programação inclui debates sobre temas fundamentais para a cidade, como os desafios do saneamento básico e da segurança hídrica, a integração dos quatro componentes do saneamento (água, esgoto, drenagem e resíduos sólidos), soluções baseadas na natureza (SbN) e inovações tecnológicas para a gestão eficiente de resíduos sólidos, além de outros tópicos pertinentes.
-
-O seminário também abordará os desafios impostos pelas mudanças climáticas, que tornam cada vez mais urgente a busca por soluções inovadoras e adaptativas. Dessa forma, o evento vai promover a troca de experiências e a apresentação de projetos e iniciativas que possam contribuir para a modernização e o avanço dos sistemas de saneamento e gestão de resíduos sólidos em São Paulo.
-
-<hr>
-
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.1.1.
 
 ## Development server
