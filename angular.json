@@ -55,7 +55,7 @@
                 "glob": "**/*",
                 "input": "public"
               },
-              "src/assets/imges",
+              "src/assets/images",
               "src/assets/icons"
             ],
             "styles": [
