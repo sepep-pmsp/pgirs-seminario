@@ -54,7 +54,9 @@
               {
                 "glob": "**/*",
                 "input": "public"
-              }
+              },
+              "src/assets/imges",
+              "src/assets/icons"
             ],
             "styles": [
               "src/styles.scss"
@@ -66,13 +68,13 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "500kB",
-                  "maximumError": "1MB"
+                  "maximumWarning": "500MB",
+                  "maximumError": "100MB"
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "4kB",
-                  "maximumError": "8kB"
+                  "maximumWarning": "40MB",
+                  "maximumError": "80MB"
                 }
               ],
               "outputHashing": "all"

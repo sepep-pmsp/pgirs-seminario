@@ -1,0 +1,34 @@
+._list_navigation_, ._navigation_ {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+
+    ._list_navigation_{
+        background-color: var(--primary);
+        padding: 1rem;
+        border-radius: 5rem;
+    }
+}
+
+.nav{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+    width: 42rem;
+}
+
+._nav_{
+    background-color: white;
+    padding: 1rem;
+    border-radius: 5rem;
+
+    .p_nav{
+        font-weight: bold;
+
+    }
+}
