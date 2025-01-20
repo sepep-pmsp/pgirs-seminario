@@ -1,0 +1,47 @@
+<div class="_home_">
+    <div class="__home_page__" *ngFor="let item of home">
+        <div class="_home_info" >
+            <div>
+                <div class="img-logo">
+                    <img class="logo" [src]="item.img_home" alt="">
+                </div>
+                <div class="adress-information">
+                    <div [ngClass]="item.class_data">
+                        <p class="txtinfo">{{ item.strong_data }} {{ item.data_ }}</p>
+                    </div>
+                    <div [ngClass]="item.class_local">
+                        <p class="txtinfo"><strong>{{ item.strong_local }}</strong> {{ item.local_ }}</p>
+                    </div>
+                    <div [ngClass]="item.class_adress">
+                        <p class="txtinfo">{{ item.adress_ }}</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="_home_txt">
+                    <p class="txtinfo _2_">{{ item.txt_1 }}</p>
+                    <p class="txtinfo _2_">{{ item.txt_2 }}</p>
+                    <p class="txtinfo _2_">{{ item.txt_3 }}</p>
+                </div>
+            </div>
+        </div>
+        <div class="_home_btn">
+            <div class="btn-1">
+                <a href="">
+                    <button class="btn">
+                        <p class="txtinfo _3_ strong">inscreva-se</p>
+                        <p class="txtinfo _3_">vagas para estudantes</p>
+                    </button>
+                </a>
+            </div>
+            <div class="btn-2">
+                <a href="">
+                    <button class="btn">
+                        <p class="txtinfo _3_ strong">veja</p>
+                        <p class="txtinfo _3_">a transmissão</p>
+                    </button>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
