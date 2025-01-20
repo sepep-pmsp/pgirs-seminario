@@ -1,0 +1,33 @@
+.__footer__{
+    background-color: var(--primary);
+}
+
+.footer_img{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding: 2rem;
+    gap: 4rem;
+}
+
+.images{
+    background-color: var(--White);
+    width: 23rem;
+    border-radius: 5rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    height: 5rem;
+}
+
+.image_1{
+    width: 4rem;
+}
+.image_2{
+    width: 10rem;
+}
