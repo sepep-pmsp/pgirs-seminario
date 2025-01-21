@@ -1,0 +1,100 @@
+.__palestrantes__{
+    margin: 1rem;
+    padding: 4.5rem .5rem;
+}
+
+._palestrantes_{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 5rem;
+}
+
+.title-txt{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 3rem;
+
+    .title1{
+        text-transform: capitalize;
+    }
+}
+
+.listpalestrantes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    width: 100%;
+    gap: 5rem;
+}
+
+.list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+
+}
+
+.info_txt{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 1rem;
+}
+
+.list2{
+    text-align: end;
+}
+
+.p-txt{
+    width: 50rem;
+    text-align: justify;
+    font-weight: 300;
+    font-size: 20px;
+
+    &.p{
+        font-weight: 400;
+    }
+}
+
+.list-2{
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+}
+
+.img{
+    background-color: var(--secondary);
+    width: 25rem;
+    height: 25rem;
+    border-radius: 2rem;
+}
+
+.title2, .title4, .title5{
+    font-size: 22px;
+    &.title2{
+        font-size: 2rem;
+    }
+}
+
+.title4{
+    font-weight: 600;
+}
+.title5{
+    font-weight: 500;
+}
