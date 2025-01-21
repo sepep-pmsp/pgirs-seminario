@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { CommonModule, NgClass } from '@angular/common';
+import { CommonModule, NgClass, NgFor } from '@angular/common';
 import { NavigationComponent } from './navigation/navigation.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomepageComponent } from './pages/home/homepage/homepage.component';
@@ -18,7 +18,8 @@ import { PalestrantesPageComponent } from './pages/palestrantes/palestrantes-pag
   imports: [
     CommonModule,
     RouterModule,
-    NgClass
+    NgClass,
+    NgFor
   ],
   exports: [ HomepageComponent, NavigationComponent, FooterComponent, PalestrantesPageComponent,]
 })
