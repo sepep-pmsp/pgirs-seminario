@@ -1,0 +1,169 @@
+.date-and-table{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  padding: 3.5rem 3rem;
+}
+
+.title-txt{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 3rem;
+    padding: 2rem 4rem;
+    width: 50rem;
+
+    .p-txt{
+        font-weight: 200;
+        font-size: 22px;
+    }
+}
+.listprogramacao{
+  padding: 2rem 1rem;
+}
+
+.date-txt{
+  width: 29rem;
+  height: 7rem;
+  text-align: center;
+  background-color: var(--secondary);
+  color: var(--White);
+  padding: 1.5rem 0.5rem;
+  border-radius: 5rem;
+  font-size: 49px;
+}
+
+.table-compoentes{
+  text-align: center;
+  background-color: var(--secondary);
+  height: 3rem;
+  border-radius: 5rem;
+  font-size: 23px;
+  padding: 0.7rem .5rem;
+  margin: 3rem 1rem;
+  color: var(--White);
+
+  &._4_{
+    width: 35rem;
+  }
+}
+
+#intervalo-Café, #intervalo-Encerramento{
+  background-color: var(--tertiary);
+  width: 103rem;
+  border: none;
+  font-size: 23px;
+}
+#intervaloCafé, #intervaloEncerramento{
+  background-color: var(--tertiary);
+  border: none;
+  font-size: 23px;
+}
+
+.eixo, ._mesa_, ._palestrantes_{
+  word-break: break-word;
+  width: 25rem;
+  font-size: 22px;
+}
+
+._time_, ._eixo_, ._mesa_, ._palestrantes_{
+  padding: 3rem 1rem;
+  width: 12rem;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 5rem;
+  margin: 1rem 1rem ;
+  height: 100%;
+  font-size: 22px;
+
+  &._mesa_{
+    width: 40rem;
+  }
+  &._eixo_{
+    width: 26rem;
+  }
+  &._palestrantes_{
+    width: 85%;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 425px){
+  .__programacao__{
+    padding: 5rem 0 0 0;
+  }
+  .title-txt{
+    width: 22rem;
+    padding: 2rem .9rem;
+
+    .p{
+      font-size: 18px;
+      text-align: justify;
+    }
+  }
+
+
+  .date-txt{
+    width: 17rem;
+    height: 5rem;
+    text-align: center;
+    background-color: var(--secondary);
+    color: var(--White);
+    padding: 1.5rem 0.5rem;
+    border-radius: 5rem;
+    font-size: 28px;
+  }
+
+  .listprogramacao {
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .date-and-table {
+      display: inline-block;
+      vertical-align: top;
+      white-space: normal;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: center;
+      align-items: flex-start;
+  }
+
+  .table {
+      display: inline-block;
+      min-width: 600px;
+  }
+
+  .programacao-tabela th {
+      text-align: left;
+  }
+
+  ._time_, ._eixo_, ._mesa_, ._palestrantes_{
+    padding: 2rem 1rem;
+    width: 8rem;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 2rem;
+    margin: 1rem 1rem;
+    height: 100%;
+    font-size: 16px;
+    word-break: break-word;
+  }
+  ._1m, ._2m_, ._3m_, .table-compoentes{
+    width: 12rem !important;
+  }
+  ._1_, ._2_, ._3_, ._4_{
+    width: 12rem !important;
+  }
+
+  #intervalo-Café, #intervalo-Encerramento{
+    background-color: var(--tertiary);
+    width: 45rem !important;
+    border: none;
+    font-size: 23px;
+  }
+}
