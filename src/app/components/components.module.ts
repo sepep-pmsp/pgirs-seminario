@@ -11,13 +11,15 @@ import { HttpClientModule } from '@angular/common/http';
 import { BrowserModule } from '@angular/platform-browser';
 
 
-
 @NgModule({
   declarations: [
     NavigationComponent,
     FooterComponent,
     HomepageComponent,
     PalestrantesPageComponent,
+  ],
+  imports: [
+    CommonModule,
     ProgramacaoPageComponent,
     VideoPageComponent,
   ],
