@@ -9,16 +9,18 @@ import { Router } from '@angular/router';
 })
 export class NavigationComponent {
   isMenuOpen = false;
-  constructor( 
-    private router: Router) {}
+
+  constructor(private router: Router) {}
+
   ngOnInit() {
     this.router.events.subscribe(() => {
       this.closeMenu();
     });
   }
+
   closeMenu() {
     this.isMenuOpen = false;
-    const checkbox = document.getElementById('checkbox') as HTMLInputElement;
+    const checkbox = document.getElementById('navi-toggle') as HTMLInputElement;
     if (checkbox) {
       checkbox.checked = false;
     }

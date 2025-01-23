@@ -14,21 +14,20 @@
 
 ._home_info {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
-    gap: 15rem;
-    padding: 3rem 0 0 0;
 }
 
 ._home__{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: nowrap;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     gap: 10rem;
+    height: 39rem;
 }
 
 .adress-information {
@@ -47,7 +46,7 @@
 
     &._2_ {
         padding: 1rem 0;
-        height: 21rem;
+        height: 15rem;
     }
 }
 
@@ -110,23 +109,44 @@
     }
 }
 
-@media (max-width: 768px) {
-    .mobile-logo {
-      content: url('../../../../../assets/images/logo-mobile.svg');
-    }
-    .img-logo{
-        position: relative;
-        left: 5rem;
-    }
+.mobile-logo {
+    display: none;
+}
+
+@media (max-width: 450px) {
 
     ._home_{
+        height: 320vh;
+    }
+
+    .logo{
+        display: none;
+    }
+
+    .mobile-logo {
+      content: url('../../../../../assets/images/logo-mobile.svg');
+      display: flex;
+      position: relative;
+      left: 6rem;
+      top: 2rem;
+    }
+
+    .adress-information{
+        position: relative;
+        top: 9rem;
+        padding: 2rem;
+    }
+
+    .img-logo{
+        position: absolute;
+    }
+
+    ._home__{
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
-        gap: 10rem;
-        align-items: center;
         justify-content: center;
-        padding: 0 0 5rem 0;
+        align-items: center;
     }
 
     ._home_page{
@@ -143,7 +163,6 @@
         flex-wrap: nowrap;
         justify-content: center;
         align-items: center;
-        gap: 33rem;
         padding: 3rem 0 0 0;
     }
 
@@ -155,17 +174,20 @@
         align-items: center;
         gap: 4rem;
         position: relative;
-        bottom: 82rem;
+        top: 12rem;
     }
 
     ._home_txt{
         display: flex;
         flex-direction: column;
-        align-content: center;
         justify-content: center;
         align-items: center;
         flex-wrap: nowrap;
-        gap: 4rem;
+        gap: 8rem;
+        position: absolute;
+        top: 27rem;
+        width: 22rem;
+        right: -11rem;
     }
 
     .txtinfo ._2_{
@@ -186,5 +208,10 @@
             font-weight: bold;
             font-size: 35px;
         }
+    }
+
+    .div_mobile_{
+        position: relative;
+        top: 20rem;
     }
 }

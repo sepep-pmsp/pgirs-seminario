@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-homepage',
@@ -7,6 +8,7 @@ import { Component } from '@angular/core';
   styleUrl: './homepage.component.scss'
 })
 export class HomepageComponent {
+ 
   home = [
     {
       img_home: 'assets/images/complete-logo.svg',
@@ -24,4 +26,12 @@ export class HomepageComponent {
       txt_3:'O seminário também abordará os desafios impostos pelas mudanças climáticas, que tornam cada vez mais urgente a busca por soluções inovadoras e adaptativas. Dessa forma, o evento vai promover a troca de experiências e a apresentação de projetos e iniciativas que possam contribuir para a modernização e o avanço dos sistemas de saneamento e gestão de resíduos sólidos em São Paulo.',
     }
   ];
+
+  constructor( 
+      private router: Router
+    ) {}
+
+  navigateToPage() {
+    this.router.navigate(['live-palestra']);
+  }
 }
