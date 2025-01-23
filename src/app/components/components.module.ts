@@ -22,11 +22,6 @@ import { BrowserModule } from '@angular/platform-browser';
   ],
   imports: [
     CommonModule,
-    ProgramacaoPageComponent,
-    VideoPageComponent,
-  ],
-  imports: [
-    CommonModule,
     BrowserModule,
     HttpClientModule,
     RouterModule,
