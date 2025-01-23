@@ -109,3 +109,82 @@
         transform: translateY(-20px);
     }
 }
+
+@media (max-width: 768px) {
+    .mobile-logo {
+      content: url('../../../../../assets/images/logo-mobile.svg');
+    }
+    .img-logo{
+        position: relative;
+        left: 5rem;
+    }
+
+    ._home_{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        gap: 10rem;
+        align-items: center;
+        justify-content: center;
+        padding: 0 0 5rem 0;
+    }
+
+    ._home_page{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: nowrap;
+        gap: 4rem;
+        flex-direction: column;
+    }
+    ._home_info{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        gap: 33rem;
+        padding: 3rem 0 0 0;
+    }
+
+    ._home_btn{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        gap: 4rem;
+        position: relative;
+        bottom: 82rem;
+    }
+
+    ._home_txt{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        gap: 4rem;
+    }
+
+    .txtinfo ._2_{
+        text-align: justify;
+        word-break: break-word;
+    }
+
+    ._data_, .local, .adress{
+        word-break: break-word;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: flex-start;
+
+        .___2{
+            padding: 1rem 0;
+            font-weight: bold;
+            font-size: 35px;
+        }
+    }
+}
