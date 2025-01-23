@@ -1,11 +1,10 @@
-._list_navigation_,
-._navigation_ {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-around;
-  align-items: center;
-  padding: 1rem 0.5rem;
+._list_navigation_, ._navigation_ {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem .5rem;
 
   ._list_navigation_ {
     background-color: var(--primary);
@@ -207,3 +206,4 @@
         background-color: var(--secondary);
     }
   }
+}

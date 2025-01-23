@@ -12,6 +12,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 
 
+
 @NgModule({
   declarations: [
     NavigationComponent,
@@ -22,17 +23,12 @@ import { BrowserModule } from '@angular/platform-browser';
   ],
   imports: [
     CommonModule,
-    ProgramacaoPageComponent,
-    VideoPageComponent,
-  ],
-  imports: [
-    CommonModule,
     BrowserModule,
     HttpClientModule,
     RouterModule,
     NgClass,
     NgFor
   ],
-  exports: [ HomepageComponent, NavigationComponent, FooterComponent, PalestrantesPageComponent, VideoPageComponent]
+  exports: [ HomepageComponent, NavigationComponent, FooterComponent, PalestrantesPageComponent,]
 })
 export class ComponentsModule { }

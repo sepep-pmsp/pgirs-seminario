@@ -5,6 +5,7 @@ import { PalestrantesPageComponent } from './components/pages/palestrantes/pales
 import { ProgramacaoPageComponent } from './components/pages/programacao/programacao-page/programacao-page.component';
 import { VideoPageComponent } from './components/pages/live/video-page/video-page.component';
 
+
 const routes: Routes = [
   { path: '', pathMatch: 'full' , component: HomepageComponent },
   { path: 'palestrantes', component: PalestrantesPageComponent },
