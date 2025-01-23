@@ -13,6 +13,14 @@
                     <div [ngClass]="item.class_local">
                         <p class="txtinfo ___1">{{ item.strong_local }}</p>
                         <p class="txtinfo ___2">{{ item.local_ }}</p>
+                    <img class="logo" [src]="item.img_home" alt="">
+                </div>
+                <div class="adress-information">
+                    <div [ngClass]="item.class_data">
+                        <p class="txtinfo">{{ item.strong_data }} {{ item.data_ }}</p>
+                    </div>
+                    <div [ngClass]="item.class_local">
+                        <p class="txtinfo"><strong>{{ item.strong_local }}</strong> {{ item.local_ }}</p>
                     </div>
                     <div [ngClass]="item.class_adress">
                         <p class="txtinfo">{{ item.adress_ }}</p>

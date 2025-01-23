@@ -1,0 +1,67 @@
+<div class="__programacao__">
+    <div class="_programacao_">
+        <div class="title-txt">
+            <h1 class="title1">Programação</h1>
+            <p class="p-txt p">A Prefeitura de São Paulo promove um seminário sobre saneamento, abordando três eixos
+                principais: <strong>
+                    integração dos componentes do saneamento; desafios das mudanças climáticas e segurança hídrica e
+                    inovações tecnológicas e modelos de governança.
+                </strong> As messas abordarão desde abastecimento de água, esgotamento sanitário até resiliência das
+                cidades e novas soluções para a gestão eficiente e sustentável do saneamento</p>
+        </div>
+        <div class="listprogramacao">
+            <div class="date-and-table" *ngFor="let prog of programacao">
+                <h2 class="date-txt">{{ prog.data }}</h2>
+                <div class="table">
+                    <table class="programacao-tabela">
+                        <thead class="__table__">
+                            <tr class="componentes">
+                                <th>
+                                    <div class="table-compoentes _1_">Horário</div>
+                                </th>
+                                <th>
+                                    <div class="table-compoentes _2_">Eixo</div>
+                                </th>
+                                <th>
+                                    <div class="table-compoentes _3_">Mesa</div>
+                                </th>
+                                <th>
+                                    <div class="table-compoentes _4_">Componentes</div>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody class="_table_">
+                            <tr *ngFor="let evento of prog.eventos" class="_container_">
+                                <td>
+                                    <div class="_time_ _1_"
+                                        [attr.id]="evento.eixo === 'Café' || evento.eixo === 'Encerramento' ? 'intervalo' + evento.eixo : null">
+                                        {{ evento.horario }}
+                                    </div>
+                                </td>
+                                <td 
+                                    [attr.colspan]="evento.eixo === 'Café' || evento.eixo === 'Encerramento' ? 3 : 1"
+                                    [class.intervalo]="evento.eixo === 'Café' || evento.eixo === 'Encerramento'">
+                                    <div 
+                                        class="_eixo_ _2_" 
+                                        [attr.id]="evento.eixo === 'Café' || evento.eixo === 'Encerramento' ? 'intervalo-' + evento.eixo : null">
+                                        {{ evento.eixo }}
+                                    </div>
+                                </td>
+                                <td *ngIf="evento.eixo !== 'Café' && evento.eixo !== 'Encerramento'">
+                                    <div class="_mesa_ _3_">
+                                        {{ evento.mesa }}
+                                    </div>
+                                </td>
+                                <td *ngIf="evento.eixo !== 'Café' && evento.eixo !== 'Encerramento'">
+                                    <div class="_palestrantes_ _4_">
+                                        {{ evento.componente }}
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>       
+    </div>
+</div>
