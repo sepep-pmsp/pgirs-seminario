@@ -28,6 +28,6 @@ import { BrowserModule } from '@angular/platform-browser';
     NgClass,
     NgFor
   ],
-  exports: [ HomepageComponent, NavigationComponent, FooterComponent, PalestrantesPageComponent]
+  exports: [ HomepageComponent, NavigationComponent, FooterComponent, PalestrantesPageComponent, VideoPageComponent]
 })
 export class ComponentsModule { }
