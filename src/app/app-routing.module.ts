@@ -11,7 +11,6 @@ const routes: Routes = [
   { path: 'palestrantes', component: PalestrantesPageComponent },
   { path: 'programacao', component: ProgramacaoPageComponent },
   { path: 'live-palestra', component: VideoPageComponent },
-
 ];
 
 @NgModule({
