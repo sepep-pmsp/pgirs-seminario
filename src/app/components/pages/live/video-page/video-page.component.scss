@@ -14,3 +14,36 @@
 iframe{
     border-radius: 3rem;
 }
+
+@media screen and (min-width: 320px) and (max-width: 425px){
+    .__live__{
+        padding: 2rem 1rem 2rem 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: nowrap;
+        height: 100%;
+    }
+
+    .video{
+        height: 16rem;
+        width: 23rem;
+    }
+}
+
+@media (orientation: landscape){
+    .__live__{
+        padding: 2rem 1rem 2rem 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: nowrap;
+        height: 100%;
+    }
+
+    .video{
+        height: 20rem;
+        width: 37rem;
+    }
+
+}

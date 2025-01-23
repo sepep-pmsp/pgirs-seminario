@@ -19,6 +19,7 @@ import { BrowserModule } from '@angular/platform-browser';
     HomepageComponent,
     PalestrantesPageComponent,
     ProgramacaoPageComponent,
+    VideoPageComponent,
   ],
   imports: [
     CommonModule,

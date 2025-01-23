@@ -14,7 +14,7 @@ export class VideoPageComponent {
     this.video = [
       {
         title: 'vídeo institucional',
-        video: this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/t70K-CJw4AA?si=uAPOSTfMIs4BI6LA'),
+        video: this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/0v5HoXHDmEM?si=DBV7RwknhOetBTzf'),
         type: 'video/youtube'
       }
     ];
