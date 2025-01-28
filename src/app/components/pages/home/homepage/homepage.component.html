@@ -9,11 +9,11 @@
                     </div>
                     <div class="adress-information">
                         <div [ngClass]="item.class_data">
-                            <p class="txtinfo ___1">{{ item.strong_data }}</p>
+                            <p class="txtinfo ___1"><strong>{{ item.strong_data }}</strong></p>
                             <p class="txtinfo ___2">{{ item.data_ }}</p>
                         </div>
                         <div [ngClass]="item.class_local">
-                            <p class="txtinfo ___1">{{ item.strong_local }}</p>
+                            <p class="txtinfo ___1"><strong>{{ item.strong_local }}</strong></p>
                             <p class="txtinfo ___2">{{ item.local_ }}</p>
                         </div>
                         <div>
@@ -24,9 +24,9 @@
             </div>
             <div class="div_mobile_">
                 <div class="_home_txt">
-                    <p class="txtinfo _2_">{{ item.txt_1 }}</p>
-                    <p class="txtinfo _2_">{{ item.txt_2 }}</p>
-                    <p class="txtinfo _2_">{{ item.txt_3 }}</p>
+                    <p class="txtinfo _2_ _desktop_">{{ item.txt_1 }}</p>
+                    <p class="txtinfo _2_ _desktop_ _mobile_">{{ item.txt_2 }}</p>
+                    <p class="txtinfo _2_ _desktop_">{{ item.txt_3 }}</p>
                 </div>
             </div>
         </div>
