@@ -28,6 +28,7 @@
   background-color: white;
   padding: 1rem;
   border-radius: 5rem;
+  width: 20rem;
 
   .p_nav {
     font-weight: bold;
@@ -292,7 +293,7 @@
 
     &__list {
       position: absolute;
-      top: 50%;
+      top: 57%;
       left: 50%;
       transform: translate(-50%, -50%);
       list-style: none;
@@ -303,12 +304,12 @@
       flex-wrap: wrap;
       justify-content: center;
       align-items: center;
-      gap: 5px;
+      gap: 27px;
     }
 
     .p_nav{
       font-size: 35px;
-      font-weight: 400;
+      font-weight: bold;
     }
 
     &__item {
@@ -402,13 +403,13 @@
     &__checkbox:checked + &__button &__icon::before {
         top: 0;
         transform: rotate(135deg);
-        background-color: var(--secondary);
+        background-color: var(--White);
     }
 
     &__checkbox:checked + &__button &__icon::after {
         top: 0;
         transform: rotate(-135deg);
-        background-color: var(--secondary);
+        background-color: var(--White);
     }
   }
 }
