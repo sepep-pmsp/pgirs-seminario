@@ -10,8 +10,7 @@ import { Component } from '@angular/core';
 export class FooterComponent {
   footer=[
     {
-      img1:'assets/icons/onu-icon.svg',
-      img2:'assets/images/VERDE_E_DO_MEIO_AMBIENTE_HORIZONTAL_FUNDO_CLARO.png',
+      img:'assets/images/footer.svg'
     }
   ];
 }
