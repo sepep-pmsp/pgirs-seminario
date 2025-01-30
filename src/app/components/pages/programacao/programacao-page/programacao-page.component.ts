@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-programacao-page',
@@ -17,13 +18,13 @@ export class ProgramacaoPageComponent {
           horario: '10h',
           eixo: 'II - Desafios das mudanças climáticas e segurança hídrica',
           mesa: 'Os desafios do saneamento básico e da segurança hídrica frente às mudanças climáticas',
-          componente: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+          componente: 'Palestrante Z',
         },
         {
           horario: '14h',
           eixo: 'I - Integração dos componentes do saneamento',
           mesa: 'Como a integração dos quatro componentes do saneamento (água, esgoto, drenagem e resíduos sólidos) pode fortalecer a resiliência e melhorar a qualidade do sistema',
-          componente: 'Palestrante 2',
+          componente: 'Palestrante Y',
         },
         {
           horario: '16h',
@@ -33,7 +34,7 @@ export class ProgramacaoPageComponent {
           horario: '16:30h',
           eixo: 'III - Inovações tecnológicas e modelos de governança',
           mesa: 'Desafios de governança, territorialidade e inclusão social na construção de planos transformadores de saneamento básico',
-          componente: '',
+          componente: 'Palestrante X',
         },
       ],
     },
@@ -44,19 +45,19 @@ export class ProgramacaoPageComponent {
           horario: '9h',
           eixo: 'II - Desafios das mudanças climáticas e segurança hídrica',
           mesa: 'Desafios da Agenda 2030 e das mudanças climáticas: saúde pública e disponibilidade hídrica',
-          componente: 'Palestrante 1',
+          componente: 'Palestrante Z',
         },
         {
           horario: '11h',
           eixo: 'III - Inovações tecnológicas e modelos de governanças',
           mesa: 'Inovações tecnológicas no abastecimento de gua e saneamento: o que esperar',
-          componente: 'Palestrante 2',
+          componente: 'Palestrante Y',
         },
         {
           horario: '14h',
           eixo: 'I - Integração dos componentes do saneamento',
           mesa: 'Gestão de águas pluviais e soluções baseadas na natureza (SbN)',
-          componente: 'Palestrante 2',
+          componente: 'Palestrante X',
         },
         {
           horario: '16h',
@@ -66,7 +67,7 @@ export class ProgramacaoPageComponent {
           horario: '16:30h',
           eixo: 'III - Inovações tecnológicas e modelos de governanças',
           mesa: 'Resíduos sólidos: Inovações tecnológicas, destinação e disposição final',
-          componente: '',
+          componente: 'Palestrante Z',
         },
         {
           horario: '18:30h',
@@ -75,4 +76,13 @@ export class ProgramacaoPageComponent {
       ],
     },
   ];
+
+  constructor(private router: Router) {}
+
+  goToPalestrante(nome: string | undefined) {
+    if (!nome) return; // Evita erro caso o nome seja undefined
+  
+    const formattedName = nome.replace(/\s+/g, '-').toLowerCase();
+    this.router.navigate(['/palestrantes'], { fragment: 'palestrante-' + formattedName });
+  }
 }
