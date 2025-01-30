@@ -1,4 +1,4 @@
-.__live__{
+.__live__ {
     padding: 2rem 1rem 5rem 1rem;
     display: flex;
     align-items: center;
@@ -6,33 +6,98 @@
     flex-wrap: nowrap;
 }
 
-.video{
+.video {
     height: 50rem;
     width: 99rem;
 }
 
-iframe{
+iframe {
     border-radius: 3rem;
 }
 
-@media screen and (min-width: 320px) and (max-width: 425px){
-    .__live__{
-        padding: 2rem 1rem 2rem 1rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-wrap: nowrap;
-        height: 100%;
-    }
+//pop-up
 
-    .video{
-        height: 16rem;
-        width: 23rem;
+.popup-overlay {
+    background-image: url(../../../../../assets/images/inscricao.svg);
+    position: fixed;
+    bottom: -9rem;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 134vh;
+    width: 100%;
+}
+
+.popup {
+    width: 36rem;
+    height: 36%;
+    background-color: #123d3de0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 1.5rem;
+    box-shadow: 6px 4px 20px 2px var(--primary);
+    border-radius: 4rem;
+}
+
+.input {
+    max-width: 190px;
+    width: 40px;
+    height: 40px;
+    outline: none;
+    margin: 5px;
+    transition: .5s;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    transform: rotate(90deg);
+  }
+  
+  input:focus {
+    width: 150px;
+    transform: rotate(0);
+  }
+
+.popup button {
+    margin-top: 2rem;
+    padding: 10px 20px;
+    background: var(--primary);
+    color: var(--White);
+    border: none;
+    cursor: pointer;
+    border-radius: 3rem;
+    width: 12rem;
+    height: 3rem;
+}
+
+.popup .erro {
+    color: red;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.text{
+    color: var(--White);
+}
+
+.aviso{
+    color: var(--White);
+    font-size: 2rem;
+
+    & a{
+        text-decoration: underline;
     }
 }
 
-@media (orientation: landscape) and (max-width:450px){
-    .__live__{
+@media screen and (min-width: 320px) and (max-width: 425px) {
+    .__live__ {
         padding: 2rem 1rem 2rem 1rem;
         display: flex;
         align-items: center;
@@ -41,9 +106,68 @@ iframe{
         height: 100%;
     }
 
-    .video{
+    .video {
+        height: 16rem;
+        width: 23rem;
+    }
+
+    .popup{
+        width: 18rem;
+        word-break: break-word;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        background-color: #0d706eb0;
+        box-shadow: 11px 20px 20px 20px #1a4141;
+    }
+
+    .text{
+        font-size: 20px;
+    }
+
+    .popup button {
+        margin-top: 2rem;
+        padding: 10px 20px;
+        background: var(--secondary);
+        color: var(--White);
+        border: none;
+        cursor: pointer;
+        border-radius: 3rem;
+        width: 12rem;
+        height: 3rem;
+    
+    }
+    .popup .erro {
+        color: red;
+        font-weight: bold;
+        font-size: 17px;
+        text-align: center;
+    }
+
+    .aviso{
+        color: var(--White);
+        font-size: 17px;
+    
+        & a{
+            text-decoration: underline;
+        }
+    }
+}
+
+@media (orientation: landscape) and (max-width: 450px) {
+    .__live__ {
+        padding: 2rem 1rem 2rem 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: nowrap;
+        height: 100%;
+    }
+
+    .video {
         height: 20rem;
         width: 37rem;
     }
-
 }

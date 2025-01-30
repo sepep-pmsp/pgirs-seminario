@@ -38,11 +38,9 @@
                                         {{ evento.horario }}
                                     </div>
                                 </td>
-                                <td 
-                                    [attr.colspan]="evento.eixo === 'Café' || evento.eixo === 'Encerramento' ? 3 : 1"
+                                <td [attr.colspan]="evento.eixo === 'Café' || evento.eixo === 'Encerramento' ? 3 : 1"
                                     [class.intervalo]="evento.eixo === 'Café' || evento.eixo === 'Encerramento'">
-                                    <div 
-                                        class="_eixo_ _2_" 
+                                    <div class="_eixo_ _2_"
                                         [attr.id]="evento.eixo === 'Café' || evento.eixo === 'Encerramento' ? 'intervalo-' + evento.eixo : null">
                                         {{ evento.eixo }}
                                     </div>
@@ -53,7 +51,8 @@
                                     </div>
                                 </td>
                                 <td *ngIf="evento.eixo !== 'Café' && evento.eixo !== 'Encerramento'">
-                                    <div class="_palestrantes_ _4_">
+                                    <div class="_palestrantes_ _4_"
+                                    (click)="goToPalestrante(evento.componente)">
                                         {{ evento.componente }}
                                     </div>
                                 </td>
@@ -62,6 +61,6 @@
                     </table>
                 </div>
             </div>
-        </div>       
+        </div>
     </div>
 </div>
