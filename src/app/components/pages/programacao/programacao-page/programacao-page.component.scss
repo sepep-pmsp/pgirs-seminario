@@ -22,6 +22,7 @@
         font-size: 22px;
     }
 }
+
 .listprogramacao{
   padding: 2rem 1rem;
 }
@@ -52,13 +53,25 @@
   }
 }
 
-#intervalo-Café, #intervalo-Encerramento{
+#intervalo-Café, #intervalo-Encerramento, #intervalo-Almoço,
+#intervalo-Intervalo-Café, #intervalo-Abertura-café, #intervalo-Happy-hour{
   background-color: var(--tertiary);
   width: 93rem;
   border: none;
   font-size: 23px;
 }
-#intervaloCafé, #intervaloEncerramento{
+
+#intervalo-Abertura{
+  width: 65rem;
+  background-color: var(--tertiary);
+  border: none;
+  font-size: 23px;
+}
+
+#intervaloCafé, #intervaloEncerramento,
+#intervaloAbertura, #intervaloAlmoço,
+#intervaloIntervalo-Café, #intervaloAbertura-café,
+#intervaloHappy-hour{
   background-color: var(--tertiary);
   border: none;
   font-size: 23px;
@@ -70,7 +83,7 @@
   font-size: 22px;
 }
 
-._time_, ._eixo_, ._mesa_, ._palestrantes_{
+._time_, ._eixo_, ._mesa_, ._palestrantes_, ._escopo_{
   padding: 3rem 1rem;
   width: 12rem;
   text-align: center;
@@ -78,16 +91,20 @@
   border-radius: 5rem;
   margin: 1rem 1rem ;
   height: 100%;
-  font-size: 22px;
+  font-size: 19px;
 
   &._mesa_{
-    width: 30rem;
+    width: 48rem;
   }
   &._eixo_{
-    width: 26rem;
+    width: 8rem;
   }
   &._palestrantes_{
-    width: 75%;
+    width: 93%;
+  }
+
+  &._escopo_{
+    width: 32rem;
   }
 }
 

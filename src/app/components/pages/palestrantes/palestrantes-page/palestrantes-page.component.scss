@@ -53,7 +53,7 @@
     gap: 1rem;
 }
 
-.list2{
+.list2, .list4, .list6, .list8, .list10, .list12, .list14, .list16{
     text-align: end;
 }
 
@@ -68,7 +68,7 @@
     }
 }
 
-.list-2{
+.list-2, .list-4, .list-6, .list-8, .list-10, .list-12, .list-14, .list-16{
     display: flex;
     flex-direction: row-reverse;
     flex-wrap: nowrap;
