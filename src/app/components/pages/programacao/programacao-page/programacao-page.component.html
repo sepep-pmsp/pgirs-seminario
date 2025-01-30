@@ -55,7 +55,8 @@
                                     <div class="_palestrantes_ _4_">
                                         <span
                                             *ngFor="let palestrante of (isArray(evento.componente) ? evento.componente : [evento.componente])">
-                                            <span class="palestrante-link" (click)="goToPalestrante(palestrante)">
+                                            <span [id]="formatarIdPalestrante(palestrante)" class="palestrante-link"
+                                                (click)="goToPalestrante(palestrante)">
                                                 {{ palestrante }}
                                             </span>
                                         </span>
