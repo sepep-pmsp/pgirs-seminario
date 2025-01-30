@@ -34,26 +34,31 @@
                             <tr *ngFor="let evento of prog.eventos" class="_container_">
                                 <td>
                                     <div class="_time_ _1_"
-                                        [attr.id]="evento.eixo === 'Café' || evento.eixo === 'Encerramento' ? 'intervalo' + evento.eixo : null">
+                                        [attr.id]="['Café','Abertura', 'Encerramento', 'Almoço', 'Intervalo-Café', 'Abertura-café', 'Happy-hour'].includes(evento.eixo) ? 'intervalo' + evento.eixo : null"
+                                        [class.intervalo]="['Café', 'Abertura', 'Encerramento', 'Almoço', 'IntervaloCafé', 'Abertura-café', 'Happy hour'].includes(evento.eixo) ? 'intervalo__' + evento.eixo : null">
                                         {{ evento.horario }}
                                     </div>
                                 </td>
-                                <td [attr.colspan]="evento.eixo === 'Café' || evento.eixo === 'Encerramento' ? 3 : 1"
-                                    [class.intervalo]="evento.eixo === 'Café' || evento.eixo === 'Encerramento'">
+                                <td [attr.colspan]="['Café', 'Encerramento', 'Almoço', 'Intervalo-Café', 'Abertura-café', 'Happy-hour'].includes(evento.eixo) ? 3 : evento.eixo === 'Abertura' ? 2 : 1"
+                                    [class.intervalo]="['Café', 'Encerramento', 'Almoço', 'IntervaloCafé', 'Abertura-café', 'Happyhour'].includes(evento.eixo)">
                                     <div class="_eixo_ _2_"
-                                        [attr.id]="evento.eixo === 'Café' || evento.eixo === 'Encerramento' ? 'intervalo-' + evento.eixo : null">
+                                        [attr.id]="['Café','Abertura', 'Encerramento', 'Almoço', 'Intervalo-Café', 'Abertura-café', 'Happy-hour'].includes(evento.eixo) ? 'intervalo-' + evento.eixo : null">
                                         {{ evento.eixo }}
                                     </div>
                                 </td>
-                                <td *ngIf="evento.eixo !== 'Café' && evento.eixo !== 'Encerramento'">
+                                <td *ngIf="evento.mesa">
                                     <div class="_mesa_ _3_">
                                         {{ evento.mesa }}
                                     </div>
                                 </td>
-                                <td *ngIf="evento.eixo !== 'Café' && evento.eixo !== 'Encerramento'">
-                                    <div class="_palestrantes_ _4_"
-                                    (click)="goToPalestrante(evento.componente)">
-                                        {{ evento.componente }}
+                                <td *ngIf="evento.componente">
+                                    <div class="_palestrantes_ _4_">
+                                        <span
+                                            *ngFor="let palestrante of (isArray(evento.componente) ? evento.componente : [evento.componente])">
+                                            <span class="palestrante-link" (click)="goToPalestrante(palestrante)">
+                                                {{ palestrante }}
+                                            </span>
+                                        </span>
                                     </div>
                                 </td>
                             </tr>
