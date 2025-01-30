@@ -9,6 +9,7 @@ import { ProgramacaoPageComponent } from './pages/programacao/programacao-page/p
 import { VideoPageComponent } from './pages/live/video-page/video-page.component';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -26,6 +27,7 @@ import { BrowserModule } from '@angular/platform-browser';
     BrowserModule,
     HttpClientModule,
     RouterModule,
+    FormsModule,
     NgClass,
     NgFor
   ],
