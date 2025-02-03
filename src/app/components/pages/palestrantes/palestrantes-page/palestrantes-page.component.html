@@ -10,13 +10,24 @@
         <div 
             *ngFor="let itens of palestrante; let i = index" 
             class="list {{ 'list-' + (i + 1) }}"
-            [id]="formatId(itens.title2)">
-            <div class="img"></div>
+            [id]="formatId(itens.nome)">
+            <div class="img">
+                <img *ngIf="itens.img && itens.img.trim() !== ''" 
+                    [src]="itens.img" 
+                    [alt]="itens.nome" 
+                    class="palestrante-img">
+            </div>
             <div class="info_txt {{ 'list' + (i + 1) }}">
-                <h2 class="title2">{{ itens.title2 }}</h2>
-                <div class="img-mobile"></div>
+                <h2 class="title2">{{ itens.nome }}</h2>
+                <p class="title3"><strong>{{ itens.cargo }}</strong></p>
+                <div class="img-mobile">
+                    <img *ngIf="itens.img && itens.img.trim() !== ''" 
+                    [src]="itens.img" 
+                    [alt]="itens.nome" 
+                    class="palestrante-img-mobile">
+                </div>
                 <div class="div-mobile">
-                    <p class="p-txt">{{ itens.descripiton }}</p>
+                    <p class="p-txt">{{ itens.description }}</p>
                 </div>
             </div>
         </div>

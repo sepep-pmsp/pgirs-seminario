@@ -53,7 +53,7 @@
     gap: 1rem;
 }
 
-.list2, .list4, .list6, .list8, .list10, .list12, .list14, .list16{
+.list2, .list4, .list6, .list8, .list10, .list12, .list14, .list16, .list18, .list20, .list22, .list24{
     text-align: end;
 }
 
@@ -68,7 +68,7 @@
     }
 }
 
-.list-2, .list-4, .list-6, .list-8, .list-10, .list-12, .list-14, .list-16{
+.list-2, .list-4, .list-6, .list-8, .list-10, .list-12, .list-14, .list-16, .list-18, .list-20, .list-22, .list-24{
     display: flex;
     flex-direction: row-reverse;
     flex-wrap: nowrap;
@@ -80,12 +80,19 @@
 
 .img{
     background-color: var(--secondary);
-    width: 25rem;
-    height: 25rem;
+    width: 24rem;
+    height: 24rem;
     border-radius: 2rem;
+
+    .palestrante-img{
+        width: 25rem;
+        height: 25rem;
+        border-radius: 2rem;
+        background-color: transparent;
+    }
 }
 
-.title2, .title4, .title5{
+.title2, .title3{
     font-size: 22px;
     &.title2{
         font-size: 2rem;
@@ -99,13 +106,17 @@
     font-weight: 500;
 }
 
+.palestrante-img-mobile{
+    display: none;
+}
+
 @media screen and (min-width: 320px) and (max-width: 425px){
 
     ._palestrantes_{
         padding: 3.5rem 1rem;
     }
 
-    .img{
+    .img, .palestrante-img{
         display: none;
     }
 
@@ -124,6 +135,13 @@
         width: 19rem;
         height: 20rem;
         border-radius: 2rem;
+
+        .palestrante-img-mobile{
+            display: flex;
+            width: 19rem;
+            height: 20rem;
+            border-radius: 2rem;
+        }
     }
 
     .div-mobile{
