@@ -22,12 +22,11 @@ export class PalestrantesPageComponent implements OnInit {
     return 'palestrante-' + nome.replace(/\s+/g, '-').toLowerCase();
   }
 
-
   ngOnInit() {
     this.palestrantesService.getPalestrantes().subscribe(data => {
       this.palestrante = data.map(itens => ({
         ...itens,
-        img: itens.img?.trim() !== '' ? itens.img : null // Se img for vazia ou undefined, define como null
+        img: itens.img?.trim() !== '' ? itens.img : null 
       }));
     });
     this.route.fragment.subscribe((fragment) => {

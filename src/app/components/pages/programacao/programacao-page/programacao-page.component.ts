@@ -78,8 +78,6 @@ export class ProgramacaoPageComponent implements OnInit {
       });
     });
   }
-  
-  
   formatarIdPalestrante(nome: any): string {
     if (nome && typeof nome === 'string') {
       return 'palestrante-' + nome.replace(/\s+/g, '-').toLowerCase();
