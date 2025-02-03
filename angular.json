@@ -56,7 +56,9 @@
                 "input": "public"
               },
               "src/assets/images",
-              "src/assets/icons"
+              "src/assets/icons",
+              "src/assets/palestrantes-img",
+              "src/assets/json"
             ],
             "styles": [
               "src/styles.scss"
