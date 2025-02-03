@@ -53,13 +53,14 @@
                                 </td>
                                 <td *ngIf="evento.componente">
                                     <div class="_palestrantes_ _4_">
-                                        <span
-                                            *ngFor="let palestrante of (isArray(evento.componente) ? evento.componente : [evento.componente])">
-                                            <span [id]="formatarIdPalestrante(palestrante)" class="palestrante-link"
+                                        <ng-container
+                                            *ngFor="let palestrante of evento.componente ?? []; let last = last">
+                                            <span class="palestrante-link" [id]="formatarIdPalestrante(palestrante)"
                                                 (click)="goToPalestrante(palestrante)">
                                                 {{ palestrante }}
                                             </span>
-                                        </span>
+                                            <br *ngIf="!last">
+                                        </ng-container>
                                     </div>
                                 </td>
                             </tr>

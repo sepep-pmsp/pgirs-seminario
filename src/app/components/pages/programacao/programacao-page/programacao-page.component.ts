@@ -24,9 +24,14 @@ export class ProgramacaoPageComponent {
           escopo:'',
           componente: [
             'Rayne Ferretti Moraes',
-            '— Onu-Habitat',
+            '\n',
             'Rodrigo Ashiuchi',
-            '— Secretaria do Verde e Meio Ambiente (Svma)'
+            '\n',
+            'Clodoaldo Pelissioni',
+            '\n',
+            'José Renato Nalini',
+            '\n',
+            'Mudanças Climáticas',
           ],
         },
         {
@@ -36,7 +41,6 @@ export class ProgramacaoPageComponent {
           escopo:'A mesa abordará os impactos das mudanças climáticas no saneamento básico e na segurança hídrica, destacando desafios e estratégias para garantir a sustentabilidade dos recursos hídricos.',
           componente: [
             'Carlos Nobre',
-            '— Academia Brasileira de Ciências',
           ],
         },
         {
@@ -49,10 +53,11 @@ export class ProgramacaoPageComponent {
           mesa: 'Como a integralidade e intersetorialidade do saneamento podem fortalecer a resiliência em direção à segurança hídrica',
           escopo:'A mesa vai mostrar como conectar diferentes áreas e adotar uma abordagem integrada no saneamento pode fortalecer a resiliência das comunidades e garantir segurança no acesso à água.',
           componente: [
-            'Elcires Pimenta',
-            '— Fundação Escola de Sociologia e Política de São Paulo',
+            'Elcires Pimenta Freire',
+            '\n',
             'Marussia Whately',
-            '— Instituto Água e Saneamento (Ias)'
+            '\n',
+            'Stela Goldenstein',
           ],
         },
         {
@@ -65,12 +70,11 @@ export class ProgramacaoPageComponent {
           mesa: 'Desafios de governança, territorialidade e inclusão social na construção de planos transformadores de saneamento básico',
           escopo:'A mesa vai debater como criar planos de saneamento mais justos e transformadores capazes de lidar com os desafios de gestão, organização dos territórios e inclusão social.',
           componente: [
-            'Francisca Adalgisa da Silva',
-            '— Sabesp',
+            'Francisca Adalgisa',
+            '\n',
             'Gabriela Chabbouh',
-            '— SVMA/UMAPAZ',
-            'Estela Alves',
-            '— UFABC'
+            '\n',
+            'Estela Alves'
           ],
         },
       ],
@@ -89,9 +93,10 @@ export class ProgramacaoPageComponent {
           escopo:'A mesa discutirá os principais desafios no abastecimento de água, destacando as oportunidades e inovações capazes de melhorar a gestão e garantir o acesso universal aos recursos hídricos.',
           componente: [
             'Monica Porto',
-            '— Poli/USP',
+            '\n',
             'Carlos José Teixeira Berenhauser',
-            ' — ABES'
+            '\n',
+            'Karla Bertocco',
           ],
         },
         {
@@ -101,11 +106,10 @@ export class ProgramacaoPageComponent {
           escopo:'A mesa abordará os desafios e as oportunidades no esgotamento sanitário, destacando soluções inovadoras para melhorar a gestão e promover a sustentabilidade no setor.',
           componente: [
             'Adriano Tonetti',
-            ' — Unicamp',
+            '\n',
             'Jonathan Espíndola',
-            ' —  Centro Internacional de Referência em Reúso de Água (Cirra/Ircwr/USP)',
+            '\n',
             'Samanta Souza',
-            ' — Sabesp'
           ],
         },
         {
@@ -119,9 +123,10 @@ export class ProgramacaoPageComponent {
           escopo:'A mesa apresentará novas abordagens e soluções para a gestão da água pluvial, explorando estratégias inovadoras que unam eficiência e adaptação às mudanças climáticas.',
           componente: [
             'Luciana Travassos',
-            ' — UFABC',
+            '\n',
             'Pedro Algodoal',
-            ' — FCTH',
+            '\n',
+            'Melissa Graciosa',
           ],
         },
         {
@@ -135,13 +140,12 @@ export class ProgramacaoPageComponent {
           escopo:'A mesa discutirá os desafios e as oportunidades na gestão de resíduos sólidos, destacando inovações e soluções para tornar o setor mais eficiente e sustentável.',
           componente: [
             'Dione Manetti',
-            ' — Instituto Pragma',
+            '\n',
             'Fabrício Soler',
-            ' —  Fiesp',
+            '\n',
             'Mariana Maia',
-            ' — Seas RJ',
+            '\n',
             'João Manoel da Costa Neto',
-            'Mauro Haddad',
           ],
         },
         {
@@ -151,6 +155,7 @@ export class ProgramacaoPageComponent {
       ],
     },
   ];
+last: any;
 
   constructor(private router: Router) {} 
 
@@ -161,6 +166,10 @@ export class ProgramacaoPageComponent {
   formatarIdPalestrante(nome: string): string {
     return 'palestrante-' + nome.replace(/\s+/g, '-').toLowerCase();
   }
+
+  formatContent(componentes: string[]): string {
+    return componentes.join('<br>');
+  }  
 
   goToPalestrante(nome: string | undefined) {
     if (!nome) return;
