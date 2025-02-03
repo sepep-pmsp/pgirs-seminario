@@ -82,8 +82,9 @@
               "outputHashing": "all"
             },
             "development": {
-              "optimization": false,
+              "optimization": true,
               "extractLicenses": false,
+              "statsJson": true,
               "sourceMap": true
             }
           },
