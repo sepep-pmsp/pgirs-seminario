@@ -56,7 +56,9 @@
                 "input": "public"
               },
               "src/assets/images",
-              "src/assets/icons"
+              "src/assets/icons",
+              "src/assets/palestrantes-img",
+              "src/assets/json"
             ],
             "styles": [
               "src/styles.scss"
@@ -80,8 +82,9 @@
               "outputHashing": "all"
             },
             "development": {
-              "optimization": false,
+              "optimization": true,
               "extractLicenses": false,
+              "statsJson": true,
               "sourceMap": true
             }
           },

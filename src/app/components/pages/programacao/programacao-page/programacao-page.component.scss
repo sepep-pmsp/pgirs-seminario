@@ -53,8 +53,8 @@
   }
 }
 
-#intervalo-Café, #intervalo-Encerramento, #intervalo-Almoço,
-#intervalo-Intervalo-Café, #intervalo-Abertura-café, #intervalo-Happy-hour{
+#intervalo-Recepção, #intervalo-Encerramento, #intervalo-Abertura,
+#intervalo-Intervalo{
   background-color: var(--tertiary);
   width: 93rem;
   border: none;
@@ -68,10 +68,8 @@
   font-size: 23px;
 }
 
-#intervaloCafé, #intervaloEncerramento,
-#intervaloAbertura, #intervaloAlmoço,
-#intervaloIntervalo-Café, #intervaloAbertura-café,
-#intervaloHappy-hour{
+#intervaloRecepção, #intervaloEncerramento, #intervaloAbertura,
+#intervaloIntervalo{
   background-color: var(--tertiary);
   border: none;
   font-size: 23px;

@@ -1,175 +1,35 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { ProgramacaoService } from '../programacao.service';
+import { PalestranteService } from '../../palestrantes/palestrante.service';
+import { forkJoin } from 'rxjs';
 
 @Component({
   selector: 'app-programacao-page',
   standalone: false,
-  
   templateUrl: './programacao-page.component.html',
-  styleUrl: './programacao-page.component.scss'
+  styleUrls: ['./programacao-page.component.scss']
 })
-export class ProgramacaoPageComponent {
+export class ProgramacaoPageComponent implements OnInit {
   divisoes: string[] = ['horario', 'eixo', 'mesa', 'componentes'];
-  programacao = [
-    {
-      data: '19 de fevereiro',
-      eventos: [
-        {
-          horario: '9h',
-          eixo: 'Café',
-        },
-        {
-          horario: '9h30-10h',
-          eixo: 'Abertura',
-          escopo:'',
-          componente: [
-            'Rayne Ferretti Moraes',
-            '— Onu-Habitat',
-            'Rodrigo Ashiuchi',
-            '— Secretaria do Verde e Meio Ambiente (Svma)'
-          ],
-        },
-        {
-          horario: '10h-12h',
-          eixo: '1',
-          mesa: 'Os desafios do saneamento básico e da segurança hídrica frente às mudanças climáticas',
-          escopo:'A mesa abordará os impactos das mudanças climáticas no saneamento básico e na segurança hídrica, destacando desafios e estratégias para garantir a sustentabilidade dos recursos hídricos.',
-          componente: [
-            'Carlos Nobre',
-            '— Academia Brasileira de Ciências',
-          ],
-        },
-        {
-          horario: '12h-14h',
-          eixo: 'Almoço',
-        },
-        {
-          horario: '14h-16h',
-          eixo: '1',
-          mesa: 'Como a integralidade e intersetorialidade do saneamento podem fortalecer a resiliência em direção à segurança hídrica',
-          escopo:'A mesa vai mostrar como conectar diferentes áreas e adotar uma abordagem integrada no saneamento pode fortalecer a resiliência das comunidades e garantir segurança no acesso à água.',
-          componente: [
-            'Elcires Pimenta',
-            '— Fundação Escola de Sociologia e Política de São Paulo',
-            'Marussia Whately',
-            '— Instituto Água e Saneamento (Ias)'
-          ],
-        },
-        {
-          horario: '16h-16h30',
-          eixo: 'Intervalo-Café',
-        },
-        {
-          horario: '16h30-18h30',
-          eixo: '3',
-          mesa: 'Desafios de governança, territorialidade e inclusão social na construção de planos transformadores de saneamento básico',
-          escopo:'A mesa vai debater como criar planos de saneamento mais justos e transformadores capazes de lidar com os desafios de gestão, organização dos territórios e inclusão social.',
-          componente: [
-            'Francisca Adalgisa da Silva',
-            '— Sabesp',
-            'Gabriela Chabbouh',
-            '— SVMA/UMAPAZ',
-            'Estela Alves',
-            '— UFABC'
-          ],
-        },
-      ],
-    },
-    {
-      data: '20 de fevereiro',
-      eventos: [
-        {
-          horario: '8h30',
-          eixo: 'Abertura-café',
-        },
-        {
-          horario: '9h -10h30',
-          eixo: '2',
-          mesa: 'Abastecimento de água: desafios, potencialidades e inovação',
-          escopo:'A mesa discutirá os principais desafios no abastecimento de água, destacando as oportunidades e inovações capazes de melhorar a gestão e garantir o acesso universal aos recursos hídricos.',
-          componente: [
-            'Monica Porto',
-            '— Poli/USP',
-            'Carlos José Teixeira Berenhauser',
-            ' — ABES'
-          ],
-        },
-        {
-          horario: '10h30-12h',
-          eixo: '3',
-          mesa: 'Esgotamento sanitário: desafios, potencialidades e inovação',
-          escopo:'A mesa abordará os desafios e as oportunidades no esgotamento sanitário, destacando soluções inovadoras para melhorar a gestão e promover a sustentabilidade no setor.',
-          componente: [
-            'Adriano Tonetti',
-            ' — Unicamp',
-            'Jonathan Espíndola',
-            ' —  Centro Internacional de Referência em Reúso de Água (Cirra/Ircwr/USP)',
-            'Samanta Souza',
-            ' — Sabesp'
-          ],
-        },
-        {
-          horario: '',
-          eixo: 'Almoço',
-        },
-        {
-          horario: '14h-15h30',
-          eixo: '1',
-          mesa: 'Novos repertórios para a gestão e sistemas de manejo de água pluvial',
-          escopo:'A mesa apresentará novas abordagens e soluções para a gestão da água pluvial, explorando estratégias inovadoras que unam eficiência e adaptação às mudanças climáticas.',
-          componente: [
-            'Luciana Travassos',
-            ' — UFABC',
-            'Pedro Algodoal',
-            ' — FCTH',
-          ],
-        },
-        {
-          horario: '15h30 - 16h',
-          eixo: 'Intervalo-Café',
-        },
-        {
-          horario: '16h - 18h',
-          eixo: '3',
-          mesa: 'Resíduos sólidos: desafios, potencialidades e inovação',
-          escopo:'A mesa discutirá os desafios e as oportunidades na gestão de resíduos sólidos, destacando inovações e soluções para tornar o setor mais eficiente e sustentável.',
-          componente: [
-            'Dione Manetti',
-            ' — Instituto Pragma',
-            'Fabrício Soler',
-            ' —  Fiesp',
-            'Mariana Maia',
-            ' — Seas RJ',
-            'João Manoel da Costa Neto',
-            'Mauro Haddad',
-          ],
-        },
-        {
-          horario: '18h',
-          eixo: 'Happy-hour',
-        },
-      ],
-    },
-  ];
+  programacao: any[] = [];
+  palestrante: any[] = [];
+  last: any;
 
-  constructor(private router: Router) {} 
-
-  formatarTexto(texto: string): string {
-    return texto.replace(/\n/g, '<br>');
-  }
-
-  formatarIdPalestrante(nome: string): string {
-    return 'palestrante-' + nome.replace(/\s+/g, '-').toLowerCase();
+  formatContent(componentes: string[]): string {
+    return componentes.join('<br>');
   }
 
   goToPalestrante(nome: string | undefined) {
     if (!nome) return;
-    const formattedName = nome.replace(/\s+/g, '-').toLowerCase();
-    this.router.navigate(['/palestrantes'], { fragment: 'palestrante-' + formattedName }).then(() => {
+    const formattedName = this.formatarIdPalestrante(nome);
+    this.router.navigate(['/palestrantes'], { fragment: formattedName }).then(() => {
       setTimeout(() => {
-        const element = document.getElementById('palestrante-' + formattedName);
+        const element = document.getElementById(formattedName);
         if (element) {
           element.scrollIntoView({ behavior: 'smooth' });
+        } else {
+          console.warn(`Elemento com ID ${formattedName} não encontrado!`);
         }
       }, 500);
     });
@@ -177,5 +37,52 @@ export class ProgramacaoPageComponent {
 
   isArray(value: any): value is string[] {
     return Array.isArray(value);
+  }
+
+  getNomePalestrante(abbreviation: string): string {
+    const palestrante = this.palestrante.find(p => p.abbreviation === abbreviation);
+    console.log(`Abbreviation: ${abbreviation}, Nome Completo: ${palestrante ? palestrante.nome : 'Não encontrado'}`);
+    return palestrante ? palestrante.nome : abbreviation;
+  }
+
+  constructor(
+    private programacaoService: ProgramacaoService,
+    private palestrantesService: PalestranteService,
+    private router: Router
+  ) { }
+
+  ngOnInit(): void {
+    forkJoin([
+      this.programacaoService.getProgramacao(),
+      this.palestrantesService.getPalestrantes()
+    ]).subscribe(([programacaoData, palestranteData]) => {
+      this.programacao = programacaoData;
+      this.palestrante = palestranteData;
+
+      this.programacao.forEach(event => {
+        event.eventos.forEach((ev: any) => {
+          if (ev.componente) {
+            ev.componente = ev.componente
+              .filter((item: any) => typeof item === 'object' && item.id) 
+              .map((item: any) => {
+                const palestrante = this.palestrante.find(p => p.id === item.id);
+                if (palestrante) {
+                  return palestrante.abbreviation;
+                } else {
+                  console.warn(`Palestrante não encontrado para o ID: ${item.id}`);
+                  return `Desconhecido (${item.id})`;
+                }
+              });
+          }
+        });
+      });
+    });
+  }
+  formatarIdPalestrante(nome: any): string {
+    if (nome && typeof nome === 'string') {
+      return 'palestrante-' + nome.replace(/\s+/g, '-').toLowerCase();
+    }
+    console.warn(`Nome não é uma string válida: ${nome}`);
+    return '';
   }
 }

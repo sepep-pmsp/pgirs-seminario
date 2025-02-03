@@ -2,12 +2,17 @@
     <div class="_programacao_">
         <div class="title-txt">
             <h1 class="title1">Programação</h1>
-            <p class="p-txt p">A Prefeitura de São Paulo promove um seminário sobre saneamento, abordando três eixos
-                principais: <strong>
-                    integração dos componentes do saneamento; desafios das mudanças climáticas e segurança hídrica e
-                    inovações tecnológicas e modelos de governança.
-                </strong> As messas abordarão desde abastecimento de água, esgotamento sanitário até resiliência das
-                cidades e novas soluções para a gestão eficiente e sustentável do saneamento</p>
+            <p class="p-txt p">
+                O seminário aborda três eixos principais:
+                <br>
+                (1) - integração dos componentes do saneamento;
+                <br>
+                (2) - desafios das mudanças climáticas e segurança hídrica
+                <br>
+                (3) - inovações tecnológicas e modelos de governança.
+                <br>
+                Confira abaixo a programação:
+            </p>
         </div>
         <div class="listprogramacao">
             <div class="date-and-table" *ngFor="let prog of programacao">
@@ -34,15 +39,14 @@
                             <tr *ngFor="let evento of prog.eventos" class="_container_">
                                 <td>
                                     <div class="_time_ _1_"
-                                        [attr.id]="['Café','Abertura', 'Encerramento', 'Almoço', 'Intervalo-Café', 'Abertura-café', 'Happy-hour'].includes(evento.eixo) ? 'intervalo' + evento.eixo : null"
-                                        [class.intervalo]="['Café', 'Abertura', 'Encerramento', 'Almoço', 'IntervaloCafé', 'Abertura-café', 'Happy hour'].includes(evento.eixo) ? 'intervalo__' + evento.eixo : null">
+                                        [attr.id]="['Recepção', 'Encerramento', 'Abertura', 'Intervalo'].includes(evento.eixo) ? 'intervalo' + evento.eixo : null">
                                         {{ evento.horario }}
                                     </div>
                                 </td>
-                                <td [attr.colspan]="['Café', 'Encerramento', 'Almoço', 'Intervalo-Café', 'Abertura-café', 'Happy-hour'].includes(evento.eixo) ? 3 : evento.eixo === 'Abertura' ? 2 : 1"
-                                    [class.intervalo]="['Café', 'Encerramento', 'Almoço', 'IntervaloCafé', 'Abertura-café', 'Happyhour'].includes(evento.eixo)">
+                                <td [attr.colspan]="evento.eixo === 'Abertura' ? 2 : ['Recepção', 'Encerramento', 'Intervalo'].includes(evento.eixo) ? 3 : 1"
+                                    [class.intervalo]="['Recepção', 'Encerramento', 'Abertura', 'Intervalo'].includes(evento.eixo)">
                                     <div class="_eixo_ _2_"
-                                        [attr.id]="['Café','Abertura', 'Encerramento', 'Almoço', 'Intervalo-Café', 'Abertura-café', 'Happy-hour'].includes(evento.eixo) ? 'intervalo-' + evento.eixo : null">
+                                        [attr.id]="['Recepção', 'Encerramento', 'Abertura', 'Intervalo'].includes(evento.eixo) ? 'intervalo-' + evento.eixo : null">
                                         {{ evento.eixo }}
                                     </div>
                                 </td>
@@ -53,13 +57,14 @@
                                 </td>
                                 <td *ngIf="evento.componente">
                                     <div class="_palestrantes_ _4_">
-                                        <span
-                                            *ngFor="let palestrante of (isArray(evento.componente) ? evento.componente : [evento.componente])">
-                                            <span [id]="formatarIdPalestrante(palestrante)" class="palestrante-link"
-                                                (click)="goToPalestrante(palestrante)">
-                                                {{ palestrante }}
+                                        <ng-container
+                                            *ngFor="let abbreviation of evento.componente ?? []; let last = last">
+                                            <span class="palestrante-link" [id]="formatarIdPalestrante(abbreviation)"
+                                                (click)="goToPalestrante(abbreviation)">
+                                                {{ abbreviation }}
                                             </span>
-                                        </span>
+                                            <br *ngIf="!last">
+                                        </ng-container>
                                     </div>
                                 </td>
                             </tr>

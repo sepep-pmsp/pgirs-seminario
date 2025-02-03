@@ -53,7 +53,7 @@
     gap: 1rem;
 }
 
-.list2, .list4, .list6, .list8, .list10, .list12, .list14, .list16{
+tr:nth-child(odd){
     text-align: end;
 }
 
@@ -62,13 +62,14 @@
     text-align: justify;
     font-weight: 300;
     font-size: 20px;
-
-    &.p{
-        font-weight: 400;
-    }
 }
 
-.list-2, .list-4, .list-6, .list-8, .list-10, .list-12, .list-14, .list-16{
+.p{
+    font-weight: 400;
+    text-align: left;
+}
+
+tr:nth-child(odd){
     display: flex;
     flex-direction: row-reverse;
     flex-wrap: nowrap;
@@ -80,12 +81,19 @@
 
 .img{
     background-color: var(--secondary);
-    width: 25rem;
-    height: 25rem;
+    width: 24rem;
+    height: 24rem;
     border-radius: 2rem;
+
+    .palestrante-img{
+        width: 25rem;
+        height: 25rem;
+        border-radius: 2rem;
+        background-color: transparent;
+    }
 }
 
-.title2, .title4, .title5{
+.title2, .title3{
     font-size: 22px;
     &.title2{
         font-size: 2rem;
@@ -99,49 +107,70 @@
     font-weight: 500;
 }
 
-@media screen and (min-width: 320px) and (max-width: 425px){
+.palestrante-img-mobile{
+    display: none;
+}
 
-    ._palestrantes_{
+@media screen and (min-width: 320px) and (max-width: 425px) {
+    ._palestrantes_ {
         padding: 3.5rem 1rem;
     }
 
-    .img{
+    .img, .palestrante-img {
         display: none;
     }
 
-    .list, .list-1, .list-2, .list-3{
+    .list, .info_txt {
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
-        justify-content: flex-start;
-        align-items: flex-start;
+        gap: 1rem;
+        justify-content: center;
+        align-items: center;
         gap: 2rem;
-        width: 100%;
+        width: 100%; 
     }
 
-    .img-mobile{
+    .img-mobile {
         background-color: var(--secondary);
         width: 19rem;
         height: 20rem;
         border-radius: 2rem;
+
+        .palestrante-img-mobile {
+            display: flex;
+            width: 19rem;
+            height: 20rem;
+            border-radius: 2rem;
+        }
     }
 
-    .div-mobile{
+    .title2, .title3{
+        text-align: center;
+    }
+
+    .div-mobile {
         padding: 1rem 0 0 0;
     }
 
-    .p-txt{
+    .p-txt {
         width: 18rem;
         text-align: justify;
         font-weight: 400;
         font-size: 15px;
     }
 
-    .list2{
-        text-align: start;
+    .list:nth-child(even),
+    .list:nth-child(odd) {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        gap: 1rem;
+        justify-content: center;
+        align-items: center;
     }
 
-    .title1{
+    .title1 {
         font-size: 55px;
     }
 }
