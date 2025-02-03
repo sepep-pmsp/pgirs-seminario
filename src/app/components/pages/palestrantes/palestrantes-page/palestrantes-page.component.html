@@ -2,10 +2,7 @@
     <div class="_palestrantes_">
         <div class="title-txt">
             <h1 class="title1">palestrantes</h1>
-            <p class="p-txt p">Os palestrantes do seminário são especialistas renomados de diversas áreas:
-                profissionais de instituições acadêmicas, representantes do setor público, líderes de empresas de
-                saneamento e consultores independentes; esses convidados trazem uma vasta experiência e diferentes
-                perspectivas.</p>
+            <p class="p-txt p">O seminário reunirá especialistas, profissionais de instituições académicas, representantes do setor público, líderes empresariais e consultores independentes</p>
         </div>
         <div 
             *ngFor="let itens of palestrante; let i = index" 
@@ -17,7 +14,7 @@
                     [alt]="itens.nome" 
                     class="palestrante-img">
             </div>
-            <div class="info_txt {{ 'list' + (i + 1) }}">
+            <div class="info_txt {{ 'list' + (i + 1) }}" [id]="formatId(itens.nome)">
                 <h2 class="title2">{{ itens.nome }}</h2>
                 <p class="title3"><strong>{{ itens.cargo }}</strong></p>
                 <div class="img-mobile">

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { PalestranteService } from '../palestrante.service';
+import { IMAGE_CONFIG } from '@angular/common';
 
 @Component({
   selector: 'app-palestrantes-page',
