@@ -242,3 +242,43 @@
         }
     }
 }
+
+@media screen and (max-width: 1441px){
+    ._home_txt{    
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        gap: 1.5rem;
+        }
+
+    ._2_{
+        height: 34rem;
+    }
+}
+
+@media screen and (max-width: 1025px){
+    .logo{
+        width: 27rem;
+    }
+
+    .adress-information{
+        width: 14rem;
+    }
+
+    ._home_txt{    
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        gap: 1.5rem;
+        }
+
+    ._2_{
+        height: 34rem;
+    }
+}
