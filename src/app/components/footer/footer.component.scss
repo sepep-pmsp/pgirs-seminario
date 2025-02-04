@@ -40,3 +40,10 @@
         width: 20rem;
     }
 }
+
+@media screen and (min-width: 1441px) and (max-width: 1854px){
+    .__footer__{
+        background-color: var(--primary);
+        width: 100%;
+    }
+}

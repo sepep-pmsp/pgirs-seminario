@@ -259,9 +259,33 @@
     }
 }
 
-@media screen and (max-width: 1025px){
+@media screen and (min-width: 1190px) and (max-width: 1765px){
     .logo{
         width: 27rem;
+    }
+
+    .adress-information{
+        width: 14rem;
+    }
+
+    ._home_txt{    
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        gap: 1.5rem;
+        }
+
+    ._2_{
+        height: 34rem;
+    }
+}
+
+@media screen and (min-width: 970px) and (max-width: 1189px){
+    .logo{
+        width: 22rem;
     }
 
     .adress-information{
