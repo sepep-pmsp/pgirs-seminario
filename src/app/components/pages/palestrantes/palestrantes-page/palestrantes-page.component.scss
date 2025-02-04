@@ -59,7 +59,6 @@
 
 .p-txt{
     width: 50rem;
-    text-align: justify;
     font-weight: 300;
     font-size: 20px;
 }
@@ -70,7 +69,10 @@
 }
 
 .list:nth-child(odd){
+    display: flex;
+    flex-direction: row-reverse;
     flex-wrap: nowrap;
+    justify-content: flex-start;
     align-items: center;
     gap: 2rem;
     width: 100%;
@@ -152,9 +154,9 @@
 
     .p-txt {
         width: 18rem;
-        text-align: justify;
         font-weight: 400;
         font-size: 15px;
+        text-align: center;
     }
 
     .list:nth-child(even),

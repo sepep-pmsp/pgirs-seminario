@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "img": "assets/palestrantes-img/Rayne-Ferretti.jpg",
+        "img": "assets/palestrantes-img/Rayne-Ferretti-Moraes.png",
         "nome": "Rayne Ferretti Moraes",
         "abbreviation": "Rayne Ferretti Moraes",
         "cargo" : "Onu-Habitat",
@@ -9,7 +9,7 @@
       },
       {
         "id": 2,
-        "img": "assets/palestrantes-img/Rodrigo-Ashiuchi.jpg",
+        "img": "assets/palestrantes-img/Rodrigo-Ashiuchi.png",
         "nome": "Rodrigo Ashiuchi",
         "abbreviation": "Rodrigo Ashiuchi",
         "cargo" : "Secretaria do Verde e Meio Ambiente (Svma)",
@@ -17,7 +17,7 @@
       },
       {
         "id": 3,
-        "img": "assets/palestrantes-img/Clodoaldo-Pelissioni.jpg",
+        "img": "assets/palestrantes-img/Clodoaldo-Pelissioni.png",
         "nome": "Clodoaldo Pelissioni",
         "abbreviation": "Clodoaldo Pelissioni",
         "cargo" : "Secretaria Executiva de Planejamento e Eficiência (Seplan)",
@@ -25,7 +25,7 @@
       },
       {
         "id": 4,
-        "img": "assets/palestrantes-img/Jose-Renato-Nalini.jpg",
+        "img": "assets/palestrantes-img/Jose-Renato-Nalini.png",
         "nome": "José Renato Nalini",
         "abbreviation": "José Renato Nalini",
         "cargo" : "Secretaria Executiva de Mudanças Climáticas (Seclima)",
@@ -33,7 +33,7 @@
       },
       {
         "id": 5,
-        "img": "assets/palestrantes-img/Carlos-Nobre.jpg",
+        "img": "assets/palestrantes-img/Carlos-Nobre.png",
         "nome": "Carlos Nobre",
         "abbreviation": "Carlos Nobre",
         "cargo" : "Academia Brasileira de Ciências",
@@ -41,7 +41,7 @@
       },
       {
         "id": 6,
-        "img": "assets/palestrantes-img/Elcires-pimenta.jpg",
+        "img": "assets/palestrantes-img/Elcires-Pimenta-Freire.png",
         "nome": "Elcires Pimenta Freire",
         "abbreviation": "Elcires Pimenta",
         "cargo" : "Fundação Escola de Sociologia e Política de São Paulo",
@@ -49,7 +49,7 @@
       },
       {
         "id": 7,
-        "img": "assets/palestrantes-img/Marussia-Whately.jpg",
+        "img": "assets/palestrantes-img/Marussia-Whately.png",
         "nome": "Marussia Whately",
         "abbreviation": "Marussia Whately",
         "cargo" : "Instituto Água e Saneamento (Ias)",
@@ -57,7 +57,7 @@
       },
       {
         "id": 8,
-        "img": "",
+        "img": "assets/palestrantes-img/Stela-Goldenstein.png",
         "nome": "Stela Goldenstein",
         "abbreviation": "Stela Goldenstein",
         "cargo" : "Consultora",
@@ -65,7 +65,7 @@
       },
       {
         "id": 9,
-        "img": "assets/palestrantes-img/Francisca-Adalgisa-da-Silva.jpeg",
+        "img": "assets/palestrantes-img/Francisca-Adalgisa-da-Silva.png",
         "nome": "Francisca Adalgisa da Silva",
         "abbreviation": "Francisca Adalgisa",
         "cargo" : "Sabesp",
@@ -73,7 +73,7 @@
       },
       {
         "id": 10,
-        "img": "assets/palestrantes-img/Gabriela-Chabbouh.jpg",
+        "img": "assets/palestrantes-img/Gabriela-Chabbouh.png",
         "nome": "Gabriela Chabbouh",
         "abbreviation": "Gabriela Chabbouh",
         "cargo" : "SVMA/UMAPAZ",
@@ -81,7 +81,7 @@
       },
       {
         "id": 11,
-        "img": "assets/palestrantes-img/Estela-Alves.jpeg",
+        "img": "assets/palestrantes-img/Estela-Alves.png",
         "nome": "Estela Alves",
         "abbreviation": "Estela Alves",
         "cargo" : "UFABC",
@@ -89,7 +89,7 @@
       },
       {
         "id": 12,
-        "img": "assets/palestrantes-img/Monica-Porto.jpg",
+        "img": "assets/palestrantes-img/Monica-Porto.png",
         "nome": "Monica Porto",
         "abbreviation": "Monica Porto",
         "cargo" : "Poli/USP",
@@ -97,7 +97,7 @@
       },
       {
         "id": 13,
-        "img": "assets/palestrantes-img/Carlos-Berenhauser.jpg",
+        "img": "assets/palestrantes-img/Carlos-Jose-Teixeira-Berenhauser.png",
         "nome": "Carlos José Teixeira Berenhauser",
         "abbreviation": "Carlos Berenhauser",
         "cargo" : "ABES",
@@ -105,7 +105,7 @@
       },
       {
         "id": 14,
-        "img": "",
+        "img": "assets/palestrantes-img/Karla-Bertocco.png",
         "nome": "Karla Bertocco",
         "abbreviation": "Karla Bertocco",
         "cargo" : "SABESP",
@@ -113,7 +113,7 @@
       },
       {
         "id": 15,
-        "img": "assets/palestrantes-img/Adriano-Luiz-Tonetti.jpg",
+        "img": "assets/palestrantes-img/Adriano-Luiz-Tonetti.png",
         "nome": "Adriano Luiz Tonetti",
         "abbreviation": "Adriano Tonetti",
         "cargo" : "Unicamp",
@@ -121,7 +121,7 @@
       },
       {
         "id": 16,
-        "img": "assets/palestrantes-img/Jonathan-Espindola.jpg",
+        "img": "assets/palestrantes-img/Jonathan-Espindola.png",
         "nome": "Jonathan Espíndola",
         "abbreviation": "Jonathan Espíndola",
         "cargo" : "Cirra/Ircwr/USP",
@@ -129,15 +129,15 @@
       },
       {
         "id": 17,
-        "img": "",
+        "img": "assets/palestrantes-img/Samanta-Souza.png",
         "nome": "Samanta Souza ",
         "abbreviation": "Samanta Souza",
         "cargo" : "Sabesp",
-        "description": "Professor na Escola Politécnica da Universidade de São Paulo. Pesquisador no Centro Internacional de Referência em Reúso de Água (CIRRA/IRCWR/USP). Doutor em Engenharia do Ambiente pelo Departamento de Engenharia Química da Faculdade de Engenharia da Universidade do Porto. Graduado em Engenharia Ambiental pela Universidade Federal de Minas Gerais."
+        "description": ""
       },
       {
         "id": 18,
-        "img": "assets/palestrantes-img/Luciana-Travassos.jpeg",
+        "img": "assets/palestrantes-img/Luciana-Travassos.png",
         "nome": "Luciana Travassos",
         "abbreviation": "Luciana Travassos",
         "cargo" : "UFABC",
@@ -145,7 +145,7 @@
       },
       {
         "id": 19,
-        "img": "assets/palestrantes-img/Pedro-Algodoal.jpeg",
+        "img": "assets/palestrantes-img/Pedro-Algodoal.png",
         "nome": "Pedro Algodoal",
         "abbreviation": "Pedro Algodoal",
         "cargo" : "FCTH",
@@ -153,7 +153,7 @@
       },
       {
         "id": 20,
-        "img": "assets/palestrantes-img/Melissa-Graciosa.jpeg",
+        "img": "assets/palestrantes-img/Melissa-Graciosa.png",
         "nome": "Melissa Graciosa",
         "abbreviation": "Melissa Graciosa",
         "cargo" : "UFABC",
@@ -161,7 +161,7 @@
       },
       {
         "id": 21,
-        "img": "assets/palestrantes-img/Dione-Manetti.jpg",
+        "img": "assets/palestrantes-img/Dione-Manetti.png",
         "nome": "Dione Manetti",
         "abbreviation": "Dione Manetti",
         "cargo" : "Instituto Pragma",
@@ -169,7 +169,7 @@
       },
       {
         "id": 22,
-        "img": "assets/palestrantes-img/Fabrício-Soler.jpg",
+        "img": "assets/palestrantes-img/Fabricio-Soler.png",
         "nome": "Fabrício Soler",
         "abbreviation": "Fabrício Soler",
         "cargo" : "Fiesp",
@@ -177,7 +177,7 @@
       },
       {
         "id": 23,
-        "img": "assets/palestrantes-img/Mariana-Maia.jpg",
+        "img": "assets/palestrantes-img/Mariana-Maia.png",
         "nome": "Mariana Maia",
         "abbreviation": "Mariana Maia",
         "cargo" : "Seas RJ",
