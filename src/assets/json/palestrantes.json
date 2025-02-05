@@ -61,7 +61,7 @@
         "nome": "Stela Goldenstein",
         "abbreviation": "Stela Goldenstein",
         "cargo" : "Consultora",
-        "description": ""
+        "description": "Foi Secretária Adjunta e Secretária de Meio Ambiente do Estado e do Município de São Paulo. Desenvolveu programas de urbanização de favelas, gestão de recursos hídricos, planejamento ambiental regional. Foi assessora especial dos governadores Mário Covas e José Serra. É consultora autônoma para meio ambiente, recursos hídricos e saneamento."
       },
       {
         "id": 9,
@@ -109,7 +109,7 @@
         "nome": "Karla Bertocco",
         "abbreviation": "Karla Bertocco",
         "cargo" : "SABESP",
-        "description": ""
+        "description": "Conselheira de administração da Sabesp, da Orizon Valorização de Resíduos e sócia da JiveMauá. Formada em administração pública e direito, tendo trabalhado por quase 20 anos em posições de liderança em instituições do setor público e privado do setor de infraestrutura."
       },
       {
         "id": 15,
@@ -130,7 +130,7 @@
       {
         "id": 17,
         "img": "assets/palestrantes-img/Samanta-Souza.png",
-        "nome": "Samanta Souza ",
+        "nome": "Samanta Souza",
         "abbreviation": "Samanta Souza",
         "cargo" : "Sabesp",
         "description": ""
