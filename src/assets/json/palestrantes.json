@@ -33,11 +33,11 @@
       },
       {
         "id": 5,
-        "img": "assets/palestrantes-img/Carlos-Nobre.png",
-        "nome": "Carlos Nobre",
-        "abbreviation": "Carlos Nobre",
-        "cargo" : "Academia Brasileira de Ciências",
-        "description": "Reconhecido como um dos climatologistas mais renomados do Brasil, possui doutorado em Meteorologia pelo MIT e ampla experiência em pesquisa e gestão científica. Foi coordenador de importantes instituições, como o CPTEC-INPE e o CEMADEN, além de ter atuado como cientista-chefe do Experimento LBA. É membro da Academia Brasileira de Ciências e integrou a equipe agraciada com o Prêmio Nobel da Paz de 2007."
+        "img": "",
+        "nome": "",
+        "abbreviation": "",
+        "cargo" : "",
+        "description": ""
       },
       {
         "id": 6,
