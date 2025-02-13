@@ -7,7 +7,7 @@
         "eixo": "Recepção"
       },
       {
-        "horario": "9h30-10h",
+        "horario": "9h30-10h30",
         "eixo": "Abertura",
         "escopo": "",
         "componente": [
@@ -18,11 +18,13 @@
           { "id": 3 },
           "\n",
           { "id": 4 },
+          "\n",
+          { "id": 25 },
           "\n"
         ]
       },
       {
-        "horario": "10h-12h",
+        "horario": "10h30-12h",
         "eixo": "1",
         "mesa": "Os desafios do saneamento básico e da segurança hídrica frente às mudanças climáticas",
         "escopo": "A mesa abordará os impactos das mudanças climáticas no saneamento básico e na segurança hídrica, destacando desafios e estratégias para garantir a sustentabilidade dos recursos hídricos.",

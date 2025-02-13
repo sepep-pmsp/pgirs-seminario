@@ -33,11 +33,11 @@
       },
       {
         "id": 5,
-        "img": "",
-        "nome": "",
-        "abbreviation": "",
-        "cargo" : "",
-        "description": ""
+        "img": "assets/palestrantes-img/Marco-Antonio-Palermo.png",
+        "nome": "Marco Antonio Palermo",
+        "abbreviation": "Marco Antonio Palermo",
+        "cargo" : "SP Urbanismo",
+        "description": "Assessor da SP Urbanismo. Possui graduação em Engenharia Civil pela Escola Politécnica da Universidade de São Paulo (1981), mestrado em Engenharia Hidráulica pela Escola Politécnica da Universidade de São Paulo (1991) e doutorado em Engenharia de Recursos Hídricos pela Escola Politécnica da Universidade de São Paulo (2002). Tem experiência na área de Engenharia Civil, com ênfase em Engenharia de Recursos Hídricos."
       },
       {
         "id": 6,
@@ -190,5 +190,13 @@
         "abbreviation": "João Manoel da Costa Neto",
         "cargo" : "SP Regula",
         "description": "Diretor Presidente da SP Regula. Advogado formado pela Universidade Municipal de São Caetano do Sul – USCS, ocupou os cargos de diretor de contratos e convênios, assessor parlamentar e chefe de gabinete da Secretaria de Estado da Cultura, foi secretário municipal de cultura de São Caetano do Sul entre 2017 e 2021."
+      },
+      {
+        "id": 25,
+        "img": "",
+        "nome": "Thomaz Toledo",
+        "abbreviation": "Thomaz Toledo",
+        "cargo" : "Cetesb",
+        "description": "Integrou o Ministério de Minas e Energia, onde ocupou os cargos de Diretor de Meio Ambiente e Conselheiro Titular do CONAMA. É advogado ambiental e biólogo, formado em direito pela Pontifícia Universidade Católica de São Paulo e em Biologia pela Universidade de São Paulo, com 20 anos de experiência em órgãos públicos e na iniciativa privada."
       }
 ]
