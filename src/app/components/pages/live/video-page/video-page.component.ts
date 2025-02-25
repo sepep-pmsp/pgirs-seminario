@@ -4,36 +4,25 @@ import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 @Component({
   selector: 'app-video-page',
   standalone: false,
-  
   templateUrl: './video-page.component.html',
-  styleUrl: './video-page.component.scss'
+  styleUrls: ['./video-page.component.scss']
 })
-export class VideoPageComponent{
-  video: { title: string; video: SafeResourceUrl; type: string }[] = [];
+export class VideoPageComponent {
+  videos: { date: string; title: string; video: SafeResourceUrl; youtubeUrl: string }[] = [];
 
   constructor(private sanitizer: DomSanitizer) {
-    this.definirVideo();
-  }
-
-  definirVideo() {
-    const hoje = new Date().getDate();
-
-    let videoUrl = 'https://www.youtube.com/embed/gGr5a9apHOw?si=WOeIb4Dle_hZtbBt';
-    let titulo = 'Vídeo Institucional';
-
-    if (hoje === 19) {
-      videoUrl = 'https://www.youtube.com/embed/-8Yhn0OjBJU?si=kpb2JtIe3bxs2Zvn';
-      titulo = 'Live - Dia 19';
-    } else if (hoje === 20) {
-      videoUrl = 'https://www.youtube.com/embed/JegP_9qvEjI?si=Q8g19SRp-JzwFNrW';
-      titulo = 'Live - Dia 20';
-    }
-
-    this.video = [
+    this.videos = [
       {
-        title: titulo,
-        video: this.sanitizer.bypassSecurityTrustResourceUrl(videoUrl),
-        type: 'video/youtube'
+        date: '19 de Fevereiro de 2025',
+        title: 'Seminário Planos Municipais de Saneamento e Gestão de Resíduos Sólidos - SP',
+        video: this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/-8Yhn0OjBJU?si=ZPBiOwntuNTaDeC6'),
+        youtubeUrl: 'https://www.youtube.com/-8Yhn0OjBJU?si=ZPBiOwntuNTaDeC6'
+      },
+      {
+        date: '20 de Fevereiro de 2025',
+        title: 'Seminário Planos Municipais de Saneamento e Gestão de Resíduos Sólidos - SP',
+        video: this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/JegP_9qvEjI?si=nGryn4SDPC7R8noK'),
+        youtubeUrl: 'https://www.youtube.com/JegP_9qvEjI?si=nGryn4SDPC7R8noK'
       }
     ];
   }

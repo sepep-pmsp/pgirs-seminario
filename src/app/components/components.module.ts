@@ -10,6 +10,7 @@ import { VideoPageComponent } from './pages/live/video-page/video-page.component
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
+import { FormsComponent } from './pages/forms/forms.component';
 
 
 
@@ -21,6 +22,7 @@ import { FormsModule } from '@angular/forms';
     PalestrantesPageComponent,
     ProgramacaoPageComponent,
     VideoPageComponent,
+    FormsComponent,
   ],
   imports: [
     CommonModule,

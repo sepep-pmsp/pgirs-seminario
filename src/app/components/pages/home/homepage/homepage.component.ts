@@ -21,9 +21,9 @@ export class HomepageComponent {
       class_local: 'local',
       class_adress: 'adress',
 
-      txt_1:'Organizado pela Prefeitura de São Paulo, em parceria com Programa das Nações Unidas para os Assentamentos Humanos (ONU-Habitat), o seminário vai envolver questões relacionadas aos Planos Municipais de Saneamento Básico (PMSB) e de Gestão Integrada de Resíduos Sólidos (PGIRS), em desenvolvimento.',
-      txt_2:'A programação inclui debates sobre temas fundamentais para a cidade, como os desafios do saneamento básico e da segurança hídrica, a integração dos quatro componentes do saneamento (água, esgoto, drenagem e resíduos sólidos), soluções baseadas na natureza (SbN) e inovações tecnológicas para a gestão eficiente de resíduos sólidos, além de outros tópicos pertinentes.',
-      txt_3:'O seminário também abordará os desafios impostos pelas mudanças climáticas, que tornam cada vez mais urgente a busca por soluções inovadoras e adaptativas. Dessa forma, o evento vai promover a troca de experiências e a apresentação de projetos e iniciativas que possam contribuir para a modernização e o avanço dos sistemas de saneamento e gestão de resíduos sólidos em São Paulo.',
+      txt_1:'Organizado pela Prefeitura de São Paulo, em parceria com Programa das Nações Unidas para os Assentamentos Humanos (ONU-Habitat), o seminário envolveu questões relacionadas aos Planos Municipais de Saneamento Básico (PMSB) e de Gestão Integrada de Resíduos Sólidos (PGIRS), em desenvolvimento.',
+      txt_2:'A programação incluiu debates sobre temas fundamentais para a cidade, como os desafios do saneamento básico e da segurança hídrica, a integração dos quatro componentes do saneamento (água, esgoto, drenagem e resíduos sólidos), soluções baseadas na natureza (SbN) e inovações tecnológicas para a gestão eficiente de resíduos sólidos, além de outros tópicos pertinentes.',
+      txt_3:'O seminário também abordou os desafios impostos pelas mudanças climáticas, que tornam cada vez mais urgente a busca por soluções inovadoras e adaptativas. Dessa forma, o evento vai promover a troca de experiências e a apresentação de projetos e iniciativas que possam contribuir para a modernização e o avanço dos sistemas de saneamento e gestão de resíduos sólidos em São Paulo.',
     }
   ];
 
@@ -33,5 +33,8 @@ export class HomepageComponent {
 
   navigateToPage() {
     this.router.navigate(['live-palestra']);
+  }
+  navigate() {
+    this.router.navigate(['inscrição']);
   }
 }

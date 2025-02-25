@@ -1,5 +1,11 @@
 <div class="__live__">
-    <div class="video" *ngFor="let video of video">
-        <iframe [src]="video.video" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
+    <div class="video-container">
+      <div class="video-box" *ngFor="let video of videos">
+        <h2 class="video-date">{{ video.date }}</h2>
+        <h3 class="video-title">{{ video.title }}</h3>
+        <iframe [src]="video.video" class="video-frame" frameborder="0" allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <a [href]="video.youtubeUrl" target="_blank" class="youtube-link">Assistir no YouTube</a>
+      </div>
     </div>
-</div>
+  </div>
+  

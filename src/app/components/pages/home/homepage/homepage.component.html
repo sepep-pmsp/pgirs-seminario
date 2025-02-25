@@ -1,6 +1,6 @@
 <div class="_home_">
     <div class="__home_page__" *ngFor="let item of home">
-        <div class="_home_info" >
+        <div class="_home_info">
             <div class="_home__">
                 <div class="img-logo">
                     <div>
@@ -32,11 +32,9 @@
         </div>
         <div class="_home_btn">
             <div class="btn-1">
-                <a href="https://forms.gle/UoPa881ertSDYmM4A" target="_blank">
-                    <button class="btn">
-                        <p class="txtinfo _3_ strong">inscreva-se</p>
-                    </button>
-                </a>
+                <button class="btn" (click)="navigate()">
+                    <p class="txtinfo _3_ strong">inscreva-se</p>
+                </button>
             </div>
             <div class="btn-2">
                 <button class="btn" (click)="navigateToPage()">

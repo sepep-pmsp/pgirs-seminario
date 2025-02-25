@@ -112,14 +112,6 @@
         "description": "Conselheira de administração da Sabesp, da Orizon Valorização de Resíduos e sócia da JiveMauá. Formada em administração pública e direito, tendo trabalhado por quase 20 anos em posições de liderança em instituições do setor público e privado do setor de infraestrutura."
       },
       {
-        "id": 15,
-        "img": "assets/palestrantes-img/Adriano-Luiz-Tonetti.png",
-        "nome": "Adriano Luiz Tonetti",
-        "abbreviation": "Adriano Tonetti",
-        "cargo" : "Unicamp",
-        "description": "Graduado em Engenharia Química, com Mestrado e Doutorado em Engenharia Civil, com ênfase em Saneamento e Ambiente, pela Universidade Estadual de Campinas (UNICAMP). Responsável pela Área de Coleta e Tratamento de Esgotos, desenvolveu pesquisas relacionadas a saneamento rural, saneamento descentralizado, remoção de nitrogênio em reatores anaeróbios e reúso agrícola de águas residuais."
-      },
-      {
         "id": 16,
         "img": "assets/palestrantes-img/Jonathan-Espindola.png",
         "nome": "Jonathan Espíndola",
@@ -129,11 +121,11 @@
       },
       {
         "id": 17,
-        "img": "assets/palestrantes-img/Samanta-Souza.png",
-        "nome": "Samanta Souza",
-        "abbreviation": "Samanta Souza",
-        "cargo" : "Sabesp",
-        "description": "Diretora executiva de Relações Institucionais e Sustentabilidade da Sabesp. É graduada em administração com Ênfase em Comércio Exterior e possui MBA Executivo pela FIA/USP, além de formações pela FAAP, FGV e Columbia University. Foi subsecretária de Recursos Hídricos e Saneamento Básico do Estado de São Paulo (2023/2024) e, com mais de 25 anos na Sabesp, atuou em diversas áreas, incluindo Planejamento, Controladoria e Experiência do Cliente."
+        "img": "assets/palestrantes-img/Meunim_Rodrigues.png",
+        "nome": "Meunim Rodrigues Oliveira Jr",
+        "abbreviation": "Meunim Rodrigues Oliveira Jr",
+        "cargo" : "",
+        "description": "Diretor de relações contratuais e institucionais da Sabesp. É tecnólogo de obras hidráulicas, engenheiro civil e possui MBA em gestão empresarial. Na Sabesp, atuou como Coordenador de Saneamento da Subsecretaria de Recursos Hídricos e Saneamento Básico do Estado de São Paulo."
       },
       {
         "id": 18,
