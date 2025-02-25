@@ -1,0 +1,127 @@
+.___forms___ {
+    background-image: url(../../../../assets/images/bck-forms.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+}
+
+.forms_page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6rem;
+    width: 100%;
+}
+
+._title_ {
+    color: white;
+    font-size: 25px;
+    text-align: center;
+}
+
+.btn {
+    border-radius: 5rem;
+    width: 20rem;
+    height: 7rem;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary);
+    transition:
+        background-color 0.3s ease,
+        transform 0.3s ease;
+
+    &:hover {
+        background-color: var(--secondary);
+        transform: translateY(-10px);
+    }
+}
+
+p {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+/* ✅ Responsivo para tablets e celulares */
+@media screen and (max-width: 768px) {
+    .___forms___ {
+        background-size: cover; // Ajusta a imagem para telas menores
+        padding: 1.5rem;
+        min-height: 100vh;
+    }
+
+    .forms_page {
+        gap: 4rem; // Reduz espaçamento entre elementos
+    }
+
+    ._title_ {
+        font-size: 22px;
+    }
+
+    .btn {
+        width: 16rem;
+        height: 5rem;
+        font-size: 14px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+}
+
+/* ✅ Responsivo para smartphones pequenos (até 425px) */
+@media screen and (max-width: 425px) {
+    .___forms___ {
+        padding: 1rem;
+        background-size: cover;
+    }
+
+    .forms_page {
+        gap: 3rem;
+    }
+
+    ._title_ {
+        font-size: 20px;
+    }
+
+    .btn {
+        width: 14rem;
+        height: 4.5rem;
+        font-size: 13px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+}
+
+/* ✅ Ajuste para modo paisagem (landscape) em telas pequenas */
+@media (orientation: landscape) and (max-width: 768px) {
+    .___forms___ {
+        padding: 1rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .forms_page {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+
+    .btn {
+        width: 14rem;
+        height: 4rem;
+        font-size: 12px;
+    }
+}
